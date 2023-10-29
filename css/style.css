@@ -13,6 +13,7 @@ body {
 
 /*Navigation*/
 
+/* TODO use BEM. header should have .navigation class */
 header {
   display: flex;
   justify-content: space-between;
@@ -25,25 +26,30 @@ header {
   width: 188px;
 }
 
+/* TODO use BEM. .navigation__ */
 nav > ul {
   display: flex;
   list-style: none;
 }
 
+/* TODO use BEM. .navigation__ */
 nav li {
   padding-right: 40px;
 }
 
+/* TODO use BEM. .navigation__ */
 nav a {
   text-decoration: none;
   color: #404040;
 }
 
+/* TODO use BEM. .navigation__ */
 nav a:hover {
   color: #2563eb;
   font-weight: 700;
 }
 
+/* TODO use BEM. .navigation__ */
 ul .navigation__menuElement--active {
   color: #2563eb;
   font-weight: 700;
@@ -69,6 +75,7 @@ ul .navigation__menuElement--active {
   margin: 0 0 0 8px;
 }
 
+/* TODO before you have used camel case ex. "permIdentityIcon". you should be consistant in project so use either camel case or kebab case like here */
 .self-advertisement {
   display: flex;
   align-items: center;
@@ -95,6 +102,7 @@ ul .navigation__menuElement--active {
   flex: 1;
 }
 
+/* Note for the future. In BEM element selectors should not be used. It should be like: .hero__content__header */
 .hero__content h1 {
   font-size: 2.75rem;
   font-weight: 700;
@@ -153,6 +161,7 @@ ul .navigation__menuElement--active {
   border: none;
 }
 
+/* I guess it's about__card, unless something else uses similar styles then it should be, a global style (at top of the file) */
 .card {
   flex: 1;
   border: 1px solid #bdbdbd;
@@ -218,6 +227,7 @@ ul .navigation__menuElement--active {
 
 /*Article section*/
 
+/* TODO Here BEM went missing :D */
 .horizontal-article article {
   padding: 80px 100px 0 100px;
   display: flex;
@@ -254,6 +264,8 @@ ul .navigation__menuElement--active {
 .courses {
   margin: 96px 100px 0 100px;
 }
+
+/* TODO Here BEM went missing :D */
 
 .courses .cards {
   display: flex;
@@ -327,6 +339,7 @@ ul .navigation__menuElement--active {
   margin: 24px 0 0 0;
 }
 
+/* TODO I guess button could be single global class (at top of this file), that would give flex, padding, height and other styles reused between buttons in this project */
 .button--blue {
   display: flex;
   justify-content: center;
@@ -388,6 +401,7 @@ ul .navigation__menuElement--active {
   position: relative;
 }
 
+/* TODO here BEM went missing  */
 .english-test .waves {
   height: 275px;
   position: absolute;
@@ -456,6 +470,7 @@ ul .navigation__menuElement--active {
   display: flex;
 }
 
+/* TODO here BEM went missing */
 .about-us .about-us-image {
   flex: 1;
   margin: 0 130px 0 0;
@@ -491,6 +506,8 @@ ul .navigation__menuElement--active {
 }
 
 /*Opinions section*/
+
+/* TODO here BEM went missing */
 
 .opinions {
   margin: 80px 0 0 0;
@@ -561,6 +578,7 @@ ul .navigation__menuElement--active {
 
 /*Offers section*/
 
+/* TODO here BEM went missing */
 .offers {
   padding: 0 100px;
   margin: 80px 0 0 0;
@@ -671,6 +689,7 @@ ul .navigation__menuElement--active {
 
 /*Footer*/
 
+/* TODO here BEM went missing */
 footer {
   display: flex;
   flex-direction: column;
